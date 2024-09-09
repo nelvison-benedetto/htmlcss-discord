@@ -105,9 +105,17 @@ hr.divider {
 .bg-dark {
     background-color: var(--dis-dark-color);
 }
+/* backgr images*/
+.bg-jumboimg{
+    background-image: url("/assets/img/jumbo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+}
+
 
 /* header */
-
 #app_header {
     padding: 1rem 0;
     .logo{
@@ -139,7 +147,13 @@ hr.divider {
 
 /* Main */
 
-#app_main {}
+#app_main {
+    .container-sm{
+        display: flex;
+        border: 1px dashed black;
+        flex-grow: 1;
+    }
+}
 
 
 /* Footer */
