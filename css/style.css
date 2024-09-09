@@ -6,6 +6,7 @@
 }
 
 :root {
+    --dis-white: #fff;
     --dis-primary-color: blue;
     --dis-light-color: gray;
     --dis-dark-color: #121222;
@@ -54,7 +55,7 @@ Mettere nelle regole di debug solo le alezze fisse e colori di sfondo sgargianti
 }
 
 .container-sm {
-    width: 70%;
+    width: 42%;
     margin: auto;
 }
 
@@ -96,6 +97,9 @@ hr.divider {
     padding-bottom: 2rem;
 }
 /* colors */
+.bg-white{
+    background-color: var(--dis-white);
+}
 .bg-primary {
     background-color: var(--dis-primary-color);
 }
@@ -114,6 +118,9 @@ hr.divider {
     width: 100vw;
 }
 
+.text-white{
+    color: var(--dis-white);
+}
 
 /* header */
 #app_header {
@@ -148,11 +155,34 @@ hr.divider {
 /* Main */
 
 #app_main {
-    .container-sm{
-        display: flex;
-        border: 1px dashed black;
-        flex-grow: 1;
+    *{
+        text-align: center;
+        color: var(--dis-white);
     }
+    h1{
+        flex-grow: 0.1;
+        font-size: 33px;
+    }
+    p{
+        flex-grow: 1;
+        font-size: 18px;
+    }
+    .flex-column{
+        flex-direction: column;
+        align-items: center;
+    }
+    .main_button_download{
+        background-color: var(--dis-white);
+        color: var(--dis-dark-color);
+        padding: 0.25rem 0.5rem;
+        border-radius: 0.75rem;
+    }
+    .main_button_onbrowser{
+        background-color: var(--dis-dark-color);
+        padding: 0.25rem 0.5rem;
+        border-radius: 0.75rem;
+    }
+
 }
 
 
@@ -171,9 +201,3 @@ hr.divider {
     justify-content: center;
     align-items: center;
 }
-
-.main_menu span{
-    flex: 1;
-    text-align: center;
-}
-
