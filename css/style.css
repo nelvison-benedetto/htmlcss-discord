@@ -9,9 +9,12 @@
     --dis-primary-color: blue;
     --dis-light-color: gray;
     --dis-dark-color: #121222;
-
+    --dis-blue-sky: #3161e0;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
 /* Makes images responsive (adaptable to their contaienr */
 img {
     max-width: 100%;
@@ -20,22 +23,18 @@ img {
 /* debug 
 Mettere nelle regole di debug solo le alezze fisse e colori di sfondo sgargianti 
 */
-
 #debug * {
     border: 1px dashed;
 }
-
 #debug header {
-    background-color: red;
+    background-color: var(--dis-blue-sky);
 
 }
-
 #debug .container-sm {
     height: 400px;
     background-color: paleturquoise;
 
 }
-
 #debug .w-40,
 #debug .w-60 {
     height: 300px;
@@ -66,58 +65,43 @@ Mettere nelle regole di debug solo le alezze fisse e colori di sfondo sgargianti
 .justify-content-between {
     justify-content: space-between;
 }
-
 .w-40 {
     width: 40%;
 }
-
 .w-60 {
     width: 60%;
 }
-
-
 .col-1 {
     width: calc((100% / 12) * 1);
 }
-
 .col-2 {
     width: calc((100% / 12) * 2);
 }
-
 .col-4 {
     width: calc((100% / 12) * 4);
 }
-
 .col-6 {
     width: 50%;
 }
-
 .col-12 {
     width: 100%;
 }
-
-
 /* Makes the rule important and not overridable */
 hr.divider {
     border-bottom: 2px solid white !important;
 }
-
 /* Spacings */
 .py-4 {
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
-
 /* colors */
-
 .bg-primary {
     background-color: var(--dis-primary-color);
 }
-
 .bg-light {
     background-color: var(--dis-light-color);
 }
-
 .bg-dark {
     background-color: var(--dis-dark-color);
 }
@@ -125,18 +109,27 @@ hr.divider {
 /* header */
 
 #app_header {
-
     padding: 1rem 0;
-
-    .logo,
-    .login {
-        flex-grow: 1
+    .logo{
+        background-image: url("/assets/img/logo.svg");  /* Percorso dell'immagine */
+        background-size: contain;  /* L'immagine si adatta al contenitore */
+        background-repeat: no-repeat;  /* Evita che l'immagine si ripeta */
+        background-position: center;  /* Centra l'immagine all'interno del div */
+        width:150px;
     }
-
-    .login {
-        text-align: end;
+    .login{
+        display: flex;
+        flex-grow: 1;
+        justify-content: end;
     }
-
+    .login span{
+        text-align: center;
+        color: #121222;
+        background-color: white;
+        padding: 0.25rem 0.5rem;
+        border-radius: 0.7rem;
+        cursor: pointer;
+    }
     .main_menu {
         flex-grow: 2;
         text-align: center;
@@ -157,3 +150,16 @@ hr.divider {
         color: white;
     }
 }
+
+.logo, .main_menu, .login{
+    color: white;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_menu span{
+    flex: 1;
+    text-align: center;
+}
+
