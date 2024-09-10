@@ -6,6 +6,7 @@
 }
 :root {
     --dis-white: #fff;
+    --dis-gray: #f6f6f6;
     --dis-primary-color: blue;
     --dis-light-color: gray;
     --dis-dark-color: #121222;
@@ -95,9 +96,28 @@ hr.divider {
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
+.py-100lr_column_gap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 100px;
+}
+
+#app_main h1, #app_main p {
+    text-align: left;
+}
+.align-left{
+    text-align: left;
+}
+
 /* colors */
 .bg-white{
     background-color: var(--dis-white);
+}
+.bg-gray{
+    background-color: var(--dis-gray);
 }
 .bg-primary {
     background-color: var(--dis-primary-color);
@@ -108,7 +128,11 @@ hr.divider {
 .bg-dark {
     background-color: var(--dis-dark-color);
 }
-
+.img_cover_norepeat_center{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 .text-white{
     color: var(--dis-white);
@@ -151,7 +175,6 @@ hr.divider {
 /* Main */
 #app_main {
     *{
-        text-align: center;
         color: var(--dis-white);
     }
     /* backgr images*/
@@ -204,6 +227,16 @@ hr.divider {
             border-radius: 0.85rem;
         }
     }
+    #main_frog_lecture{
+        background-image: url("/assets/img/item1.svg");
+    }
+    #wizard_and_pork_voices{
+        background-image: url("/assets/img/item2.svg");
+    }
+    #oculus_smiling{
+        background-image: url("/assets/img/item3.svg");
+    }
+
 }
 
 /* Footer */
