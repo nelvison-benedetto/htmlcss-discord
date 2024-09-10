@@ -38,7 +38,7 @@ Mettere nelle regole di debug solo le alezze fisse e colori di sfondo sgargianti
 #debug .w-40,
 #debug .w-60 {
     height: 300px;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
 }
 
 #debug [class^="col-"] {
@@ -56,11 +56,20 @@ Mettere nelle regole di debug solo le alezze fisse e colori di sfondo sgargianti
     width: 52%;
     margin: auto;
     padding: 0px;
-    justify-content: center;
 }
 
 .d-flex {
     display: flex;
+}
+.flex-align-center{
+    align-items: center;
+}
+.flex-justify-center{
+    justify-content: center;
+}
+.flex-center-center{
+    justify-content: center;
+    align-items: center;
 }
 
 .justify-content-between {
@@ -96,20 +105,9 @@ hr.divider {
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
-.py-100lr_column_gap{
-    display: flex;
+.column_gap{
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     gap: 20px;
-    padding: 0 100px;
-}
-
-#app_main h1, #app_main p {
-    text-align: left;
-}
-.align-left{
-    text-align: left;
 }
 
 /* colors */
@@ -174,7 +172,7 @@ hr.divider {
 }
 /* Main */
 #app_main {
-    *{
+    .main_block_center h1, .container.p{
         color: var(--dis-white);
     }
     /* backgr images*/
@@ -187,24 +185,20 @@ hr.divider {
         background-position: center;
         width: 100%;
     }
-    .main_block_top .main_block_bottom {
-        flex-grow: 2;
-    }
     .main_block_center{
-        flex-grow: 1;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
     .flex-column{
         h1{
             flex-grow: 1;
             font-size: 33px;
+            text-align: right;
         }
         p{
             flex-grow: 1;
             font-size: 18px;
+            text-align: right;
         }
         .main_buttons {
             flex-grow: 1;
@@ -236,7 +230,11 @@ hr.divider {
     #oculus_smiling{
         background-image: url("/assets/img/item3.svg");
     }
-
+    .py-100lr_column_gap h1, .py-100lr_column_gap p{
+        display: flex;
+        justify-content: start;
+        text-align: left;
+    }
 }
 
 /* Footer */
