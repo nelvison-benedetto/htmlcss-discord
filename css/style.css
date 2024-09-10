@@ -4,7 +4,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 :root {
     --dis-white: #fff;
     --dis-primary-color: blue;
@@ -32,9 +31,8 @@ Mettere nelle regole di debug solo le alezze fisse e colori di sfondo sgargianti
 
 }
 #debug .container-sm {
-    height: 400px;
+    height: 600px;
     background-color: paleturquoise;
-
 }
 #debug .w-40,
 #debug .w-60 {
@@ -53,10 +51,11 @@ Mettere nelle regole di debug solo le alezze fisse e colori di sfondo sgargianti
     max-width: 1172px;
     margin: auto;
 }
-
 .container-sm {
-    width: 42%;
+    width: 52%;
     margin: auto;
+    padding: 0px;
+    justify-content: center;
 }
 
 .d-flex {
@@ -109,14 +108,7 @@ hr.divider {
 .bg-dark {
     background-color: var(--dis-dark-color);
 }
-/* backgr images*/
-.bg-jumboimg{
-    background-image: url("/assets/img/jumbo.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100vw;
-}
+
 
 .text-white{
     color: var(--dis-white);
@@ -146,48 +138,75 @@ hr.divider {
         cursor: pointer;
     }
     .main_menu {
-        flex-grow: 2;
+        flex-grow: 3;
         text-align: center;
     }
+    .main_menu span{
+        flex-grow: 1;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
 }
-
-
 /* Main */
-
 #app_main {
     *{
         text-align: center;
         color: var(--dis-white);
     }
-    h1{
-        flex-grow: 0.1;
-        font-size: 33px;
+    /* backgr images*/
+    .bg-jumboimg{
+        display: flex;
+        align-items: start;
+        background-image: url("/assets/img/jumbo.png");
+        background-size: cover; /* NO Contain!!,impedisce il ritaglio if necessary */
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
     }
-    p{
+    .main_block_top .main_block_bottom {
+        flex-grow: 2;
+    }
+    .main_block_center{
         flex-grow: 1;
-        font-size: 18px;
-    }
-    .flex-column{
+        display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
     }
-    .main_button_download{
-        background-color: var(--dis-white);
-        color: var(--dis-dark-color);
-        padding: 0.25rem 0.5rem;
-        border-radius: 0.75rem;
+    .flex-column{
+        h1{
+            flex-grow: 1;
+            font-size: 33px;
+        }
+        p{
+            flex-grow: 1;
+            font-size: 18px;
+        }
+        .main_buttons {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: row; 
+            justify-content: space-around; 
+            align-items: center;
+            gap: 2rem;
+        }
+        .main_button_download {
+            background-color: var(--dis-white);
+            color: var(--dis-dark-color);
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.85rem;
+        }
+        .main_button_onbrowser {
+            background-color: var(--dis-dark-color);
+            color: var(--dis-white); 
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.85rem;
+        }
     }
-    .main_button_onbrowser{
-        background-color: var(--dis-dark-color);
-        padding: 0.25rem 0.5rem;
-        border-radius: 0.75rem;
-    }
-
 }
 
-
 /* Footer */
-
 #app_footer {
     .bottom {
         padding: 1rem 0;
