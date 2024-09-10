@@ -135,6 +135,10 @@ hr.divider {
     background-repeat: no-repeat;
 }
 
+.test_hight{
+    height: 100px;
+}
+
 .text-white{
     color: var(--dis-white);
 }
@@ -241,6 +245,13 @@ hr.divider {
         display: flex;
         justify-content: start;
         text-align: left;
+    }
+    #tech_stay_in_touch{
+        background-image: url("/assets/img/item4-big.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
     }
 }
 
