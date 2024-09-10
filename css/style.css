@@ -33,7 +33,7 @@ Mettere nelle regole di debug solo le alezze fisse e colori di sfondo sgargianti
 }
 #debug .container-sm {
     height: 600px;
-    background-color: paleturquoise;
+    /* background-color: paleturquoise; */
 }
 #debug .w-40,
 #debug .w-60 {
@@ -105,6 +105,9 @@ hr.divider {
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
+.gap-50{
+    gap: 50px;
+}
 .column_gap{
     flex-direction: column;
     gap: 20px;
@@ -134,6 +137,9 @@ hr.divider {
 
 .text-white{
     color: var(--dis-white);
+}
+.text-align-center{
+    text-align: center;
 }
 
 /* header */
@@ -199,6 +205,7 @@ hr.divider {
             flex-grow: 1;
             font-size: 18px;
             text-align: right;
+            color: #fff;
         }
         .main_buttons {
             flex-grow: 1;
