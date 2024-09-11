@@ -134,6 +134,12 @@ hr.divider {
     background-position: center;
     background-repeat: no-repeat;
 }
+.img_contain_norepeat_center{
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 
 .test_hight{
     height: 100px;
@@ -150,7 +156,7 @@ hr.divider {
 #app_header {
     padding: 1rem 0;
     .logo{
-        background-image: url("/assets/img/logo.svg");  /* Percorso dell'immagine */
+        background-image: url("../assets/img/logo.svg");  /* Percorso dell'immagine */
         background-size: contain;  /* L'immagine si adatta al contenitore */
         background-repeat: no-repeat;  /* Evita che l'immagine si ripeta */
         background-position: center;  /* Centra l'immagine all'interno del div */
@@ -189,7 +195,7 @@ hr.divider {
     .bg-jumboimg{
         display: flex;
         align-items: start;
-        background-image: url("/assets/img/jumbo.png");
+        background-image: url("../assets/img/jumbo.png");
         background-size: cover; /* NO Contain!!,impedisce il ritaglio if necessary */
         background-repeat: no-repeat;
         background-position: center;
@@ -233,13 +239,13 @@ hr.divider {
         }
     }
     #main_frog_lecture{
-        background-image: url("/assets/img/item1.svg");
+        background-image: url("../assets/img/item1.svg");
     }
     #wizard_and_pork_voices{
-        background-image: url("/assets/img/item2.svg");
+        background-image: url("../assets/img/item2.svg");
     }
     #oculus_smiling{
-        background-image: url("/assets/img/item3.svg");
+        background-image: url("../assets/img/item3.svg");
     }
     .py-100lr_column_gap h1, .py-100lr_column_gap p{
         display: flex;
@@ -247,7 +253,7 @@ hr.divider {
         text-align: left;
     }
     #tech_stay_in_touch{
-        background-image: url("/assets/img/item4-big.svg");
+        background-image: url("../assets/img/item4-big.svg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
