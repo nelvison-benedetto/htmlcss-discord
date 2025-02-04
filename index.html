@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discord Structure</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body id="debug">
-    <header id="app_header">
+<body id="" class="font-size-16">
+    <header id="app_header" class="bg-sky">
         <div class="container d-flex">
             <div class="logo">
             </div>
@@ -35,92 +39,156 @@
             </div>
         </div>
     </header>
+
     <main id="app_main">
+
         <section class="bg-jumboimg">
-            <div class="container-sm d-flex">
-                <div class="d-flex flex-center-center"  id="main_intro_discord">
-                    <div class="main_block_center d-flex flex-center-center flex-column column_gap">
-                        <h1 class="main_title">Il tuo posto per parlare</h1>
-                        <p class="text-align-center">Che tu faccia parte di un club scolastico, gruppo di gamer, comunità artistica mondiale, o semplicemente di un piccolo gruppo di amici che vuole passare il tempo assieme, Discord rende più facile chiaccherare ogni giorno e ritrovarsi più spesso.</p>
-                        <div class="main_buttons">
-                            <div class="main_button_download"><span></span>Scarica per Mac</div>
-                            <div class="main_button_onbrowser">Apri Discord nel tuo browser</div>
-                        </div>
+            <div class="d-flex flex-center-center"  id="" >
+                <img src="./assets/img/jumbo.png" alt="img homepage" style="position: relative;">
+                <div class="main_block_center d-flex flex-center-center column_gap col-6" style="position: absolute;">
+                    <h1 class="" style="font-size: 3.4rem;">Il tuo posto per parlare</h1>
+                    <p class="text-align-center" style="color: white;">Che tu faccia parte di un club scolastico, gruppo di gamer, comunità artistica mondiale, o semplicemente di un piccolo gruppo di amici che vuole passare il tempo assieme, Discord rende più facile chiaccherare ogni giorno e ritrovarsi più spesso.</p>
+                    <div class="main_buttons" style="padding-top:2rem;">
+                        <span style="background-color: white; padding:0.6rem 0.8rem;border-radius: 1.9rem;"><i class="fa fa-download" aria-hidden="true" style="margin-right: 0.4rem;"></i>Scarica per Mac</span>
+                        <span style="background-color: white; padding:0.6rem 0.8rem;border-radius: 1.9rem;">Apri Discord nel tuo browser</span>
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="py-4">
-            <div class="container d-flex">
-                <div class="w-40 img_cover_norepeat_center" id="main_frog_lecture">
+            <div class="container d-flex" >
+                <div class="col-7">
+                    <img src="./assets/img/item1.svg" alt="" style="position: relative;top:-28px;">
                 </div>
-                <div class="w-60 d-flex flex-center-center">
-                    <div class="w-60 d-flex flex-justify-center column_gap">
-                        <h1>Un luogo a invito con tutto lo spazio necessario per parlare</h1>
-                        <p>I server discord sono organizzati in canali tematici in cui puoi collaborare, condividere o semplicemente parlare della tua giornata semza intasare una chat di gruppo.</p>
+                <div class="col-5" style="">
+                    <div class="" style="padding: 0 2rem;display: flex;flex-direction:column;gap:1rem;">
+                        <h1 style="text-align: left;">Un luogo a invito con tutto lo spazio necessario per parlare</h1>
+                        <p style="text-align: left;">I server discord sono organizzati in canali tematici in cui puoi collaborare, condividere o semplicemente parlare della tua giornata semza intasare una chat di gruppo.</p>
                     </div>   
                 </div>
             </div>
         </section>
         <section class="bg-gray py-4">
             <div class="container d-flex">
-                <div class="w-60 d-flex flex-center-center">
-                    <div class="w-60 d-flex flex-justify-center column_gap">
-                        <h1>Dove trovarsi è facile</h1>
-                        <p>Mettiti comodo in un canale vocale quando hai tempo. Gli amici nel tuo server possono vedere che sei lì e unirsi instantaneamente senza dover chiamare.</p>
-                    </div>    
+                <div class="col-5">
+                    <div class="" style="padding: 0 2rem;display: flex;flex-direction:column;gap:1rem;">
+                        <h1 style="text-align:right;">Dove trovarsi è facile</h1>
+                        <p style="text-align:right;">Mettiti comodo in un canale vocale quando hai tempo. Gli amici nel tuo server possono vedere che sei lì e unirsi instantaneamente senza dover chiamare.</p>
+                    </div>
                 </div>
-                <div class="w-40 img_cover_norepeat_center" id="wizard_and_pork_voices">
+                <div class="col-7">
+                    <img src="./assets/img/item2.svg" alt="" style="position: relative;top: -28px;">
                 </div>
             </div>
         </section>
         <section class="py-4">
             <div class="container d-flex">
-                <div class="w-40 img_cover_norepeat_center" id="oculus_smiling">
-                </div>
-                <div class="w-60 d-flex flex-center-center">
-                    <div class="w-60 d-flex flex-justify-center column_gap">
-                        <h1>Da pochi a un fandom</h1>
-                        <p>Dai inizio ad una community di qualsiasi dimensione con strumenti di moderazione e accesso ai membri personalizzabile. Concedi ai membri poteri speciali, crea canali privati, e molto altro.</p>
-                    </div>    
+                <div class="col-7">
+                    <img src="./assets/img/item3.svg" alt="">
+                </div> 
+                <div class="col-5">
+                    <div class="" style="padding: 0 2rem;display: flex;flex-direction:column;gap:1rem;">
+                        <h1 style="text-align:left;">Da pochi a un fandom</h1>
+                        <p style="text-align:left;">Dai inizio a una community di qualsiasi dimensione con strumenti di moderazione e accesso ai membri personalizzabile. Concedi ai membri poteri speciali, crea canali privati, e molto altro.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="bg-gray py-4">
             <div class="container">
-                <div>
-                    <h1>Tecnologia affidabile per tenersi in contatto</h1>
-                    <p>Video e audio a bassa latenza ti faranno sentire come se foste tutti nella stessa stanza. Fai ciao in video, guarda gli amici giocare in streaming, o riunitevi in una sessione di disegno con la condivisione schermo.</p>
+                <div id="" class="" style="display:flex; flex-direction:column; gap:1rem;justify-content:center;">
+                    <h1 style="text-align: center;">Tecnologia affidabile per tenersi in contatto</h1>
+                    <p class="padding-test" style="text-align: center;">Video e audio a bassa latenza ti faranno sentire come se foste tutti nella stessa stanza. Fai ciao in video, guarda gli amici giocare in streaming, o riunitevi in una sessione di disegno con la condivisione schermo.</p>
                 </div>
-                <div id="tech_stay_in_touch" class="" ></div>
-                <div>
-                    <h1>Pronto a iniziare la tua avventura?</h1>
-                    <button>Scarica per Mac</button>
+                <img src="./assets/img/item4-big.svg" alt="" class="">
+                <div id="" class="" style="display:flex; flex-direction:column;gap:2rem;justify-content:center;position:relative">
+                    <h2 style="text-align: center; ;">Pronto a iniziare la tua avventura?</h2>
+                    <div style="position:absolute;left:19rem;top:-1rem;">
+                        <img src="./assets/img/stars.svg" alt="">
+                    </div>
+                    <div style="text-align:center;">
+                        <span style="background-color:gray;color:white;padding:0.7rem 1.2rem;border-radius: 1.9rem;"><i class="fa fa-download" aria-hidden="true" style="margin-right: 0.4rem;"></i>Scarica per Mac</span>
+                    </div>
                 </div>
             </div>
         </section>
-        <!-- /. -->
 
     </main>
-    <!-- /#app_main -->
-    <footer id="app_footer" class="bg-dark">
-        <div class="top container d-flex py-4">
-            <div class="col-4">Lorem, ipsum dolor.</div>
-            <div class="col-2">Lorem, ipsum.</div>
-            <div class="col-2">Lorem, ipsum.</div>
-            <div class="col-2">Lorem, ipsum.</div>
-            <div class="col-2">Lorem, ipsum.</div>            
+
+    <footer id="app_footer" class="bg-dark" style="color:white; padding:4rem 0rem 0rem 0rem;">
+        <div class="container d-flex" style="padding-bottom: 2rem;">
+            <div class="col-4" style="display:flex;flex-direction:column;gap:1.1rem;">
+                <h1 class="color-gray3" style="position:relative;top:-0.6rem;">Il tuo posto per parlare</h1>
+                <div><span style="margin-right:0.3rem;">Italiano</span><i class="fa-solid fa-angle-down"></i></div>
+                <div style="display:flex;gap: 1.6rem;">
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+            <div class="col-2">
+                <ul style="list-style:none;padding:0rem;margin:0rem; display:flex;flex-direction:column;gap:0.7rem; font-weight:bold;font-size:0.8rem;">
+                    <li class="color-gray3">Norme</li>
+                    <li>Scarica</li>
+                    <li>Perchè Discord</li>
+                    <li>Nitro</li>
+                    <li>Sicurezza</li>
+                    <li>Assistenza</li>
+                </ul>
+            </div>
+            <div class="col-2">
+                <ul style="list-style:none;padding:0rem;margin:0rem; display:flex;flex-direction:column;gap:0.7rem; font-weight:bold;font-size:0.8rem;">
+                    <li class="color-gray3">Compagnia</li>
+                    <li>Chi siamo</li>
+                    <li>Lavora con noi</li>
+                    <li>Marchio</li>
+                    <li>Redazione</li>
+                    <li>Negozio</li>
+                </ul>
+            </div>
+            <div class="col-2">
+                <ul style="list-style:none;padding:0rem;margin:0rem; display:flex;flex-direction:column;gap:0.7rem; font-weight:bold;font-size:0.8rem;">
+                    <li class="color-gray3">Risorse</li>
+                    <li>Scarica</li>
+                    <li>Perchè Discord</li>
+                    <li>Nitro</li>
+                    <li>Sicurezza</li>
+                    <li>Assistenza</li>
+                    <li>Norme</li>
+                    <li>Scarica</li>
+                    <li>Perchè Discord</li>
+                    <li>Nitro</li>
+                    <li>Sicurezza</li>
+                    <li>Assistenza</li>
+                </ul>
+            </div>
+            <div class="col-2">
+                <ul style="list-style:none;padding:0rem;margin:0rem; display:flex;flex-direction:column;gap:0.7rem; font-weight:bold;font-size:0.8rem;">
+                    <li class="color-gray3">Norme</li>
+                    <li>Scarica</li>
+                    <li>Perchè Discord</li>
+                    <li>Nitro</li>
+                    <li>Sicurezza</li>
+                    <li>Assistenza</li>
+                </ul>
+            </div>            
         </div>
-        <hr class="divider">
-        <!-- /.top -->
-        <div class="bottom container d-flex justify-content-between py-2">          
-            <div class="logo">Logo</div>
-            <div class="call_to_action">button</div>
+        <div class="container" style="padding-bottom:2.5rem;">
+            <div style="display:flex;justify-content:center;">
+                <hr class="" style="border: 1px white solid; width:95%;">
+            </div>
+            <div class="" style="display:flex; justify-content:space-between; align-items:center; padding:1.5rem 0rem;">          
+                <div class="">
+                    <img src="./assets/img/logo.svg" alt="">
+                </div>
+                <div style="text-align:center;">
+                    <span style="background-color:gray;color:white;padding:0.55rem 0.9rem;border-radius:1.9rem;">Registrati</span>
+                </div>
+            </div>
         </div>
-        <!-- /.bottom -->
     </footer>
-    <!-- /#app_footer -->
 </body>
 </html>

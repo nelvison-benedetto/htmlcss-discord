@@ -1,4 +1,3 @@
-/* Common */
 * {
     margin: 0;
     padding: 0;
@@ -9,28 +8,14 @@
     --dis-gray: #f6f6f6;
     --dis-primary-color: blue;
     --dis-light-color: gray;
-    --dis-dark-color: #121222;
+    --dis-dark-color: #23272a;
     --dis-blue-sky: #3161e0;
-}
+    --sky-light: #8ea1e1;
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
-/* Makes images responsive (adaptable to their contaienr */
-img {
-    max-width: 100%;
-}
+body{font-family: Helvetica,"Roboto",Arial,sans-serif; font-size: 1.6rem;}
 
-/* debug 
-Mettere nelle regole di debug solo le alezze fisse e colori di sfondo sgargianti 
-*/
-#debug * {
-    border: 1px dashed;
-}
-#debug header {
-    background-color: var(--dis-blue-sky);
+#debug * {border: 1px dashed;}
 
-}
 #debug .container-sm {
     height: 600px;
     /* background-color: paleturquoise; */
@@ -38,7 +23,6 @@ Mettere nelle regole di debug solo le alezze fisse e colori di sfondo sgargianti
 #debug .w-40,
 #debug .w-60 {
     height: 300px;
-    /* background-color: blueviolet; */
 }
 
 #debug [class^="col-"] {
@@ -46,7 +30,9 @@ Mettere nelle regole di debug solo le alezze fisse e colori di sfondo sgargianti
     background-color: plum;
 }
 
-/* utities */
+img{max-width: 100%;}
+.font-size-16{font-size: 16px;}
+
 .container {
     width: 80%;
     max-width: 1172px;
@@ -58,77 +44,55 @@ Mettere nelle regole di debug solo le alezze fisse e colori di sfondo sgargianti
     padding: 0px;
 }
 
-.d-flex {
-    display: flex;
-}
-.flex-align-center{
-    align-items: center;
-}
-.flex-justify-center{
-    justify-content: center;
-}
+.d-flex {display: flex;}
+.flex-column{flex-direction: column;}
+.flex-row{flex-direction: row;}
+.flex-align-center{align-items: center;}
+.flex-justify-center{justify-content: center;}
 .flex-center-center{
     justify-content: center;
     align-items: center;
 }
+.text-center{text-align: center;}
+.color-dark{color: var(--dis-dark-color);}
+.justify-content-between{justify-content: space-between;}
+.w-40{width: 40%;}
+.w-60{width: 60%;}
+.col-1  { width: calc((100% / 12) * 1); }
+.col-2  { width: calc((100% / 12) * 2); }
+.col-3  { width: calc((100% / 12) * 3); }
+.col-4  { width: calc((100% / 12) * 4); }
+.col-5  { width: calc((100% / 12) * 5); }
+.col-6  { width: calc((100% / 12) * 6); }
+.col-7  { width: calc((100% / 12) * 7); }
+.col-8  { width: calc((100% / 12) * 8); }
+.col-9  { width: calc((100% / 12) * 9); }
+.col-10 { width: calc((100% / 12) * 10); }
+.col-11 { width: calc((100% / 12) * 11); }
+.col-12 { width: 100%; } /* Ultima colonna è il 100% */
 
-.justify-content-between {
-    justify-content: space-between;
-}
-.w-40 {
-    width: 40%;
-}
-.w-60 {
-    width: 60%;
-}
-.col-1 {
-    width: calc((100% / 12) * 1);
-}
-.col-2 {
-    width: calc((100% / 12) * 2);
-}
-.col-4 {
-    width: calc((100% / 12) * 4);
-}
-.col-6 {
-    width: 50%;
-}
-.col-12 {
-    width: 100%;
-}
 /* Makes the rule important and not overridable */
-hr.divider {
-    border-bottom: 2px solid white !important;
-}
+hr.divider{border-bottom: 2px solid white !important;}
 /* Spacings */
-.py-4 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-.gap-50{
-    gap: 50px;
-}
+.py-4 {padding: 5rem 0rem;}
+.pt{padding-top:3rem;}
+.gap-50{gap: 50px;}
 .column_gap{
     flex-direction: column;
-    gap: 20px;
+    gap: 1rem;
 }
 
 /* colors */
-.bg-white{
-    background-color: var(--dis-white);
-}
-.bg-gray{
-    background-color: var(--dis-gray);
-}
-.bg-primary {
-    background-color: var(--dis-primary-color);
-}
-.bg-light {
-    background-color: var(--dis-light-color);
-}
-.bg-dark {
-    background-color: var(--dis-dark-color);
-}
+.bg-white{background-color: var(--dis-white);}
+.bg-gray{background-color: var(--dis-gray);}
+.bg-primary{background-color: var(--dis-primary-color);}
+.bg-light{background-color: var(--dis-light-color);}
+.bg-dark{background-color: var(--dis-dark-color);}
+.color-gray3{color: #7187d7;}
+
+.bg-sky{background-color: var(--dis-blue-sky);}
+.bg-sky-light{background-color: var(--sky-light);}
+
 .img_cover_norepeat_center{
     background-size: cover;
     background-position: center;
@@ -139,20 +103,23 @@ hr.divider {
     background-position: center;
     background-repeat: no-repeat;
 }
-
-
-.test_hight{
-    height: 100px;
+.test_hight{height: 100px;}
+.text-white{color: var(--dis-white);
 }
-
-.text-white{
-    color: var(--dis-white);
+.text-align-center{text-align: center;}
+.gap-10{gap: 10px;}
+.gap-20{gap:20px;}
+.img-cover-norepeat-center{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-.text-align-center{
-    text-align: center;
+.padding-test{padding: 0 100px;}
+.button{
+    color: var(--dis-dark-color);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.85rem;
 }
-
-/* header */
 #app_header {
     padding: 1rem 0;
     .logo{
@@ -164,23 +131,21 @@ hr.divider {
     }
     .login{
         display: flex;
-        flex-grow: 1;
-        justify-content: end;
     }
     .login span{
         text-align: center;
         color: #121222;
-        background-color: white;
-        padding: 0.25rem 0.5rem;
-        border-radius: 0.7rem;
+        background-color: #fff;
+        padding: 0.45rem 0.68rem;
+        border-radius: 1.2rem;
         cursor: pointer;
     }
-    .main_menu {
+    .main_menu{
         flex-grow: 3;
         text-align: center;
+        gap: 1.7rem;
     }
     .main_menu span{
-        flex-grow: 1;
         text-align: center;
         justify-content: center;
         align-items: center;
@@ -194,49 +159,41 @@ hr.divider {
     /* backgr images*/
     .bg-jumboimg{
         display: flex;
-        align-items: start;
+        align-items: center;
+        justify-content: center;
         background-image: url("../assets/img/jumbo.png");
         background-size: cover; /* NO Contain!!,impedisce il ritaglio if necessary */
         background-repeat: no-repeat;
-        background-position: center;
         width: 100%;
+        height: 100%;
     }
     .main_block_center{
         display: flex;
         flex-direction: column;
     }
-    .flex-column{
-        h1{
-            flex-grow: 1;
-            font-size: 33px;
-            text-align: right;
-        }
-        p{
-            flex-grow: 1;
-            font-size: 18px;
-            text-align: right;
-            color: #fff;
-        }
-        .main_buttons {
-            flex-grow: 1;
-            display: flex;
-            flex-direction: row; 
-            justify-content: space-around; 
-            align-items: center;
-            gap: 2rem;
-        }
-        .main_button_download {
-            background-color: var(--dis-white);
-            color: var(--dis-dark-color);
-            padding: 0.25rem 0.5rem;
-            border-radius: 0.85rem;
-        }
-        .main_button_onbrowser {
-            background-color: var(--dis-dark-color);
-            color: var(--dis-white); 
-            padding: 0.25rem 0.5rem;
-            border-radius: 0.85rem;
-        }
+    h1{
+        flex-grow: 1;
+        font-size: 33px;
+        text-align: right;
+    }
+    p{
+        flex-grow: 1;
+        font-size: 18px;
+    }
+    .main_buttons {
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-around;
+        gap: 4rem;
+    }
+    .main_button_download{
+        background-color: white; padding:0.6rem;border-radius: 1.9rem;
+    }
+    .main_button_onbrowser {
+        background-color: var(--dis-dark-color);
+        color: var(--dis-white); 
+        padding: 0.25rem 0.5rem;
+        border-radius: 0.85rem;
     }
     #main_frog_lecture{
         background-image: url("../assets/img/item1.svg");
@@ -274,4 +231,5 @@ hr.divider {
     flex: 1;
     justify-content: center;
     align-items: center;
+}
 }
